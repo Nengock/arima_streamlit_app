@@ -28,7 +28,7 @@ model = load_model(selected_model)
 st.sidebar.header("Prediction Parameters")
 
 # Input start and end dates
-start_date = st.sidebar.date_input("Select Start Date", value=datetime(2024, 12, 31), disabled=True)
+start_date = st.sidebar.date_input("Select Start Date", value=datetime(2025, 1, 31), disabled=True)
 end_date = st.sidebar.date_input("Select End Date", value=datetime.today())
 
 if start_date > end_date:
